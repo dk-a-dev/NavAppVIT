@@ -7,7 +7,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
@@ -21,11 +23,11 @@
         <activity
             android:name=".Activity.Appearance"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="userPortrait"/>
         <activity
             android:name=".Activity.Settings"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="userPortrait"/>
         <activity
             android:name=".Activity.NoNetworkActivity"
             android:exported="false" />
@@ -39,21 +41,21 @@
         <activity
             android:name=".Activity.NavigationActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="userPortrait"/>
         <activity
             android:name=".Activity.CategoryActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="userPortrait"/>
         <activity
             android:name=".Activity.HomeActivity"
             android:exported="false"
-            android:screenOrientation="portrait"
+            android:screenOrientation="userPortrait"
 
             android:label="@string/title_activity_home" />
         <activity
             android:name=".Activity.MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="userPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
