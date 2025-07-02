@@ -10,12 +10,13 @@ public class NetworkUtil {
     public static OkHttpClient getClientInstance() {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        //                .addInterceptor(interceptor)
+//                        .addInterceptor(interceptor)
         return new OkHttpClient.Builder()
-//                .addInterceptor(interceptor)
+                .addInterceptor(interceptor)
                 .build();
     }
-        public static String baseURL = "http://10.0.2.2:80/";
+        public static String baseURL = "http://122.184.65.39/";
+
         public static Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(baseURL)
                 .client(getClientInstance())
